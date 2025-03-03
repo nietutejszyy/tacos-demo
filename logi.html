@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TacOs - Praca magisterska - 'Aplikacja Internetowa - System zgłoszeń serwisowych'">
+    <meta name="keywords" content="tacos, aplikacja, internetowa, system, zgłoszeń, serwisowych, helpdesk, praca, magisterska">
+    <meta name="robots" content="noindex">
+
+    <title>Logi aplikacji - TacOs - Wersja Demonstracyjna</title>
+
+    <link rel="shortcut icon" href="img/logoIkona.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-xl sticky-top">
+        <div class="container-xxl my-1 py-2 shadow menuGlowne">
+            <a class="navbar-brand ms-3" href="index.html">
+                <img src="img/logoNapis.png" class="menuGlowneLogo" alt="TacOs menu logo" />
+            </a>
+            <button class="navbar-toggler menuGlownePrzycisk" type="button" data-bs-toggle="collapse" data-bs-target="#menuGlowneRozwijane" aria-controls="menuGlowneRozwijane" aria-expanded="false" aria-label="Zobacz menu główne">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="menuGlowneRozwijane">
+                <ul class="navbar-nav nav-underline">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Start</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="raporty.html">Raporty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="obsluga.html">Obsługa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="uzytkownicy.html">Użytkownicy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logi.html">Logi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dodajZgloszenie.html">Dodaj zgłoszenie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sprawdzZgloszenie.html">Sprawdź zgłoszenie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="poradniki.html">Poradniki</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dziennikZmian.html">Dziennik zmian</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Wersja Demo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-xxl d-flex flex-row justify-content-end ms-auto me-auto px-0 zawartoscGlowna">
+        <main class="d-flex flex-column justify-content-around mx-0 me-3 p-3 text-center">
+            <h1 class="display-2">Logi <span>aplikacji</span></h1>
+            <div class="row">
+                <div class="col-12 col-sm-11 col-md-11 ms-auto me-auto">
+                    <div class="table-responsive-xxl">
+                        <table class="table table-bordered table-hover mt-4">
+                            <thead>
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Treść</th>
+                                    <th scope="col">Kategoria</th>
+                                    <th scope="col">Użytkownik</th>
+                                    <th scope="col">Utworzono</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                                <tr>
+                                    <th scope="row">12</th>
+                                    <td class="fw-bold" style="color: #03CCE8;">Demonstracyjne zdarzenie w systemie dotyczące informacji podczas działania aplikacji.</td>
+                                    <td class="fw-bold">Informacja</td>
+                                    <td class="fst-italic">ukryte</td>
+                                    <td>25.02.2025 10:26</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">11</th>
+                                    <td class="fw-bold" style="color: #D40FCA;">Demonstracyjne zdarzenie w systemie dotyczące dodania nowego zgłoszenia.</td>
+                                    <td class="fw-bold">Dodanie zgłoszenia</td>
+                                    <td class="fst-italic">ukryte</td>
+                                    <td>25.02.2025 10:22</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">10</th>
+                                    <td class="fw-bold" style="color: #0E60ED;">Demonstracyjne zdarzenie w systemie dotyczące rejestracji nowego użytkownika.</td>
+                                    <td class="fw-bold">Rejestracja</td>
+                                    <td class="fst-italic">ukryte</td>
+                                    <td>25.02.2025 09:59</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">9</th>
+                                    <td class="fw-bold" style="color: #0FAE84;">Demonstracyjne zdarzenie w systemie dotyczące logowania w aplikacji.</td>
+                                    <td class="fw-bold">Logowanie</td>
+                                    <td class="fst-italic">ukryte</td>
+                                    <td>25.02.2025 09:44</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">8</th>
+                                    <td class="fw-bold" style="color: #E6A315;">Demonstracyjne zdarzenie w systemie dotyczące administracji w systemie.</td>
+                                    <td class="fw-bold">Administracja</td>
+                                    <td class="fst-italic">ukryte</td>
+                                    <td>25.02.2025 07:34</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">7</th>
+                                    <td class="fw-bold" style="color: #CC0101;">Demonstracyjne zdarzenie w systemie dotyczące błędu systemu.</td>
+                                    <td class="fw-bold">Błąd systemu</td>
+                                    <td class="fst-italic">ukryte</td>
+                                    <td>24.02.2025 11:23</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td class="fw-bold" style="color: #03CCE8;">Demonstracyjne zdarzenie w systemie dotyczące informacji podczas działania aplikacji.</td>
+                                    <td class="fw-bold">Informacja</td>
+                                    <td class="fst-italic">ukryte</td>
+                                    <td>24.02.2025 09:20</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td class="fw-bold" style="color: #D40FCA;">Demonstracyjne zdarzenie w systemie dotyczące dodania nowego zgłoszenia.</td>
+                                    <td class="fw-bold">Dodanie zgłoszenia</td>
+                                    <td class="fst-italic">ukryte</td>
+                                    <td>24.02.2025 09:14</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td class="fw-bold" style="color: #0E60ED;">Demonstracyjne zdarzenie w systemie dotyczące rejestracji nowego użytkownika.</td>
+                                    <td class="fw-bold">Rejestracja</td>
+                                    <td class="fst-italic">ukryte</td>
+                                    <td>24.02.2025 08:53</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td class="fw-bold" style="color: #0FAE84;">Demonstracyjne zdarzenie w systemie dotyczące logowania w aplikacji.</td>
+                                    <td class="fw-bold">Logowanie</td>
+                                    <td class="fst-italic">ukryte</td>
+                                    <td>23.02.2025 11:40</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td class="fw-bold" style="color: #E6A315;">Demonstracyjne zdarzenie w systemie dotyczące administracji w systemie.</td>
+                                    <td class="fw-bold">Administracja</td>
+                                    <td class="fst-italic">ukryte</td>
+                                    <td>23.02.2025 11:35</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td class="fw-bold" style="color: #CC0101;">Demonstracyjne zdarzenie w systemie dotyczące błędu systemu.</td>
+                                    <td class="fw-bold">Błąd systemu</td>
+                                    <td class="fst-italic">ukryte</td>
+                                    <td>23.02.2025 11:32</td>
+                                </tr>
+                                <caption>12 logów</caption>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>  
+        </main>
+        <aside class="d-flex flex-column justify-content-start mx-0 p-3 text-center">
+            <div class="wskazowki">
+                <p class="fw-bold">Wskazówki - Logi aplikacji:</p>
+                <p class="fw-bold font-monospace text-decoration-underline">Aktualnie przeglądasz wersję demonstracyjną!</p>
+                <p class="fw-bold font-monospace">Widok przeznaczony dla:<br />Administratorów</p>
+                <hr />
+                <p>Większość informacji związanych z systemem zgromadzone w jednym miejscu.</p>
+                <hr />
+                <p>Każdy wpis z działania systemu ma swoją kategorię i znaczenie.</p>
+                <hr />
+                <p>Kategorie logów dzielą się na:</p>
+                <ul class="list-unstyled">
+                    <li>Błąd systemu</li>
+                    <li>Administracja</li>
+                    <li>Logowanie</li>
+                    <li>Rejestracja</li>
+                    <li>Dodanie zgłoszenia</li>
+                </ul>
+                <hr />
+                <p class="fw-bold fst-italic">Aplikacja utworzona w celu realizacji pracy magisterskiej!</p>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <div class="container-xxl my-3 p-3 text-center lh-lg d-flex flex-column justify-content-center stopkaGlowna">
+            <a class="position-relative ms-auto me-auto mt-2 mb-3 stopkaGlownaLogo" href="index.html">
+                <img src="img/logoObrazek.svg" class="stopkaGlownaLogo" alt="TacOs stopka logo" />
+                <span class="position-absolute top-30 start-100 translate-middle badge stopkaGlownaWersja">v. 1.0.0.D</span>
+            </a>
+            <p>* 2025 *</span>
+            <p>Aplikacja utworzona w celu realizacji pracy magisterskiej pt.:</br>
+            <span class="fw-bold fst-italic">"System zgłoszeń serwisowych – aplikacja internetowa"</span></p>
+        </div>
+    </footer>
+</body>
+</html>
