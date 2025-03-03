@@ -1,0 +1,334 @@
+@font-face {
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+  font-family: "Roboto";
+}
+::selection {
+  color: #000000;
+  background: #f3b185;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: #f9f9f9;
+  font-family: "Roboto";
+  font-size: 16px;
+  color: #1A1A1A;
+  min-height: 100vh;
+}
+
+.menuGlowne {
+  background-color: #f9f9f9;
+  border: 5px solid #FF6600;
+  border-radius: 20px;
+}
+
+#menuGlowneRozwijane {
+  text-align: center;
+  font-size: 14px;
+}
+
+.menuGlownePrzycisk {
+  border: 0px;
+}
+
+.menuGlowneLogo {
+  width: 99px;
+  height: 27px;
+}
+
+main {
+  width: 70%;
+  min-height: 60vh;
+  background-color: #f9f9f9;
+  border: 5px solid #1A1A1A;
+  border-radius: 20px;
+}
+main h1 span {
+  color: #FF6600;
+}
+main h2 {
+  font-size: 34px;
+}
+main h5 {
+  font-size: 20px;
+}
+
+.zawartoscGlownaLogo {
+  width: 495px;
+  height: 135px;
+}
+
+.zawartoscGlownaPrzycisk, .zawartoscGlownaPrzycisk:visited {
+  font-size: 24px;
+  color: #1A1A1A;
+  background-color: #FFE6D5;
+  border: 5px solid #1A1A1A;
+  border-radius: 15px;
+}
+
+.zawartoscGlownaPrzycisk:hover, .zawartoscGlownaPrzycisk:active, .zawartoscGlownaPrzycisk:focus {
+  color: #f9f9f9 !important;
+  background-color: #FF6600 !important;
+  border-color: #1A1A1A !important;
+}
+
+.form-control, form-select {
+  border: 2.5px solid #1A1A1A;
+  border-radius: 10px;
+}
+
+.form-control:focus, form-select:focus {
+  outline: 0;
+  box-shadow: none;
+  border-color: #FF6600;
+}
+
+.form-control option {
+  text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.accordion-item, .accordion-body {
+  background: none !important;
+  border: 0;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+.accordion-item, .accordion-header {
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+}
+
+.accordion-button {
+  background-color: #fff;
+  border: 2.5px solid #1A1A1A;
+  border-radius: 20px !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #FFE6D5;
+  color: #1A1A1A;
+  font-weight: bold;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+.accordion-collapse {
+  border-bottom-left-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+}
+
+.accordion-collapse.show, .accordion-collapse.collapsing {
+  background-color: #fff;
+  border-left: 2.5px solid #1A1A1A;
+  border-right: 2.5px solid #1A1A1A;
+  border-bottom: 2.5px solid #1A1A1A;
+}
+
+.accordion-body {
+  text-align: left;
+}
+
+ul li span {
+  color: #FF6600;
+  font-weight: bold;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+p a, p a:visited, label a, label a:visited {
+  color: #FF6600;
+}
+
+.wylaczony {
+  color: #858585;
+  cursor: default;
+  border: none;
+  outline: none;
+}
+
+.wylaczonyPrzycisk {
+  color: #858585;
+  border-color: #858585;
+  cursor: default;
+}
+
+.form-check .form-check-input {
+  margin-left: 0;
+  float: none;
+}
+
+.form-check-input[type=checkbox] {
+  background-color: #1A1A1A;
+  color: #FF6600;
+}
+
+table {
+  font-size: 14px;
+}
+table tbody tr th span {
+  display: block;
+  font-weight: normal;
+  font-size: 10px;
+}
+table tbody tr td .nowy, table tbody tr td .oczekujacy, table tbody tr td .wtoku, table tbody tr td .zamkniety {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  border: 4px solid black;
+  width: 18px;
+  height: 18px;
+}
+table tbody tr td .nowy {
+  background-color: #91ff91;
+}
+table tbody tr td .oczekujacy {
+  background-color: #ffa569;
+}
+table tbody tr td .wtoku {
+  background-color: #5ed7ff;
+}
+table tbody tr td .zamkniety {
+  background-color: #000000;
+}
+table tbody tr td .status {
+  display: block;
+  font-weight: normal;
+  font-size: 10px;
+}
+table tbody tr td .listaPrzycisk {
+  font-weight: bold;
+}
+table tbody tr td .listaPrzycisk:hover, table tbody tr td .listaPrzycisk:focus, table tbody tr td .listaPrzycisk:active {
+  color: #FF6600;
+}
+
+.odpowiedz {
+  position: relative;
+  background-color: #ffede3;
+  border: 2.5px solid #1A1A1A;
+  border-radius: 10px;
+}
+.odpowiedz .odpowiedzEmail {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.odpowiedz .odpowiedzCzas {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.odpowiedz .odpowiedzTresc {
+  margin: 40px 10px 20px 10px;
+  text-align: left;
+}
+
+.canvas {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+}
+
+aside {
+  width: 30%;
+  min-height: 60vh;
+  background-color: #f9f9f9;
+  border: 5px solid #1A1A1A;
+  border-radius: 20px;
+}
+aside .wskazowki {
+  position: sticky;
+  top: 100px;
+}
+aside .wskazowki ul li {
+  line-height: 2rem;
+}
+aside .wskazowki .nowy, aside .wskazowki .oczekujacy, aside .wskazowki .wtoku, aside .wskazowki .zamkniety {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 4px solid black;
+  width: 18px;
+  height: 18px;
+}
+aside .wskazowki .nowy {
+  background-color: #91ff91;
+}
+aside .wskazowki .oczekujacy {
+  background-color: #ffa569;
+}
+aside .wskazowki .wtoku {
+  background-color: #5ed7ff;
+}
+aside .wskazowki .zamkniety {
+  background-color: #000000;
+}
+
+.stopkaGlowna {
+  background-color: #f9f9f9;
+  border: 5px solid #1A1A1A;
+  border-radius: 20px;
+}
+
+.stopkaGlownaLogo {
+  width: 75px;
+  height: 75px;
+}
+
+.stopkaGlownaWersja {
+  background-color: #1A1A1A;
+  font-size: 8px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .menuGlowne, .zawartoscGlowna, .stopkaGlowna {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .zawartoscGlowna {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .zawartoscGlownaLogo {
+    width: 247px;
+    height: 67px;
+  }
+  main {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  aside {
+    width: 100%;
+    min-height: 0;
+  }
+  aside span {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .zawartoscGlownaPrzyciski {
+    flex-direction: column;
+  }
+}
