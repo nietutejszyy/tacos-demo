@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TacOs - Praca magisterska - 'Aplikacja Internetowa - System zgłoszeń serwisowych'">
+    <meta name="keywords" content="tacos, aplikacja, internetowa, system, zgłoszeń, serwisowych, helpdesk, praca, magisterska">
+    <meta name="robots" content="noindex">
+
+    <title>Dziennik zmian - TacOs - Wersja Demonstracyjna</title>
+
+    <link rel="shortcut icon" href="img/logoIkona.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-xl sticky-top">
+        <div class="container-xxl my-1 py-2 shadow menuGlowne">
+            <a class="navbar-brand ms-3" href="index.html">
+                <img src="img/logoNapis.png" class="menuGlowneLogo" alt="TacOs menu logo" />
+            </a>
+            <button class="navbar-toggler menuGlownePrzycisk" type="button" data-bs-toggle="collapse" data-bs-target="#menuGlowneRozwijane" aria-controls="menuGlowneRozwijane" aria-expanded="false" aria-label="Zobacz menu główne">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="menuGlowneRozwijane">
+                <ul class="navbar-nav nav-underline">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Start</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="raporty.html">Raporty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="obsluga.html">Obsługa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="uzytkownicy.html">Użytkownicy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logi.html">Logi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dodajZgloszenie.html">Dodaj zgłoszenie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sprawdzZgloszenie.html">Sprawdź zgłoszenie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="poradniki.html">Poradniki</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dziennikZmian.html">Dziennik zmian</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Wersja Demo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-xxl d-flex flex-row justify-content-end ms-auto me-auto px-0 zawartoscGlowna">
+        <main class="d-flex flex-column justify-content-around mx-0 me-3 p-3 text-center">
+            <h1 class="display-2">Dziennik <span>zmian</span></h1>
+            <div class="row">
+                <div class="col-12 col-sm-10 col-md-8 ms-auto me-auto">
+                    <div class="accordion accordion-flush mt-4 mb-2" id="wersje">
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#v.1.0.0.D" aria-expanded="false" aria-controls="v.1.0.0.D">
+                                    Wersja - 1.0.0.D
+                                </button>
+                            </h2>
+                            <div id="v.1.0.0.D" class="accordion-collapse collapse show" data-bs-parent="#wersje">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Wprowadzono kilka poprawek.</li>
+                                        <li>Utworzono <span>wersję demonstracyjną</span> aplikacji z wersji 1.0.0.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fst-italic" style="cursor: default;" title="Niedostępne w wersji demonstracyjnej" type="button" data-bs-toggle="collapse" data-bs-target="#v1" aria-expanded="false" aria-controls="v1">
+                                    Wersja - 1.0.0
+                                </button>
+                            </h2>
+                        </div>
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fst-italic" style="cursor: default;" title="Niedostępne w wersji demonstracyjnej" type="button" data-bs-toggle="collapse" data-bs-target="#v2" aria-expanded="false" aria-controls="v2">
+                                    Wersja - 0.3.0
+                                </button>
+                            </h2>
+                        </div>
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fst-italic" style="cursor: default;" title="Niedostępne w wersji demonstracyjnej" type="button" data-bs-toggle="collapse" data-bs-target="#v3" aria-expanded="false" aria-controls="v3">
+                                    Wersja - 0.2.2
+                                </button>
+                            </h2>
+                        </div>
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fst-italic" style="cursor: default;" title="Niedostępne w wersji demonstracyjnej" type="button" data-bs-toggle="collapse" data-bs-target="#v4" aria-expanded="false" aria-controls="v4">
+                                    Wersja - 0.2.1
+                                </button>
+                            </h2>
+                        </div>
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fst-italic" style="cursor: default;" type="button" data-bs-toggle="collapse" data-bs-target="#v" aria-expanded="false" aria-controls="v">
+                                    Reszta opisów wersji niedostępna w wersji demonstracyjnej
+                                </button>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </main>
+        <aside class="d-flex flex-column justify-content-start mx-0 p-3 text-center">
+            <div class="wskazowki">
+                <p class="fw-bold">Wskazówki - Dziennik zmian:</p>
+                <p class="fw-bold font-monospace text-decoration-underline">Aktualnie przeglądasz wersję demonstracyjną!</p>
+                <p class="fw-bold font-monospace">Widok przeznaczony dla:<br />Serwisantów<br />Administratorów</p>
+                <hr />
+                <p>W tym miejscu znajdują się wszelkie informacje na temat dodanych nowości w poszczególnych aktualizacjach aplikacji.</p>
+                <hr />
+                <p>Każda aktualizacja dostała swój kafelek, który po wybraniu oraz rozwinięciu pozwala na zapoznanie się ze szczegółami zawartymi w aktualizacji.</p>
+                <hr />
+                <p class="fw-bold fst-italic">Aplikacja utworzona w celu realizacji pracy magisterskiej!</p>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <div class="container-xxl my-3 p-3 text-center lh-lg d-flex flex-column justify-content-center stopkaGlowna">
+            <a class="position-relative ms-auto me-auto mt-2 mb-3 stopkaGlownaLogo" href="index.html">
+                <img src="img/logoObrazek.svg" class="stopkaGlownaLogo" alt="TacOs stopka logo" />
+                <span class="position-absolute top-30 start-100 translate-middle badge stopkaGlownaWersja">v. 1.0.0.D</span>
+            </a>
+            <p>* 2025 *</span>
+            <p>Aplikacja utworzona w celu realizacji pracy magisterskiej pt.:</br>
+            <span class="fw-bold fst-italic">"System zgłoszeń serwisowych – aplikacja internetowa"</span></p>
+        </div>
+    </footer>
+</body>
+</html>
